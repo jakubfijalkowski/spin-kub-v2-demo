@@ -1,4 +1,5 @@
-FROM golang
+FROM arm32v7/golang
+COPY qemu-arm-static /usr/bin
 
 ADD . /go/src/spinnaker.io/demo/k8s-demo
 
